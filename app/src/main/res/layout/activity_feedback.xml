@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/custom_edittext">
+
+            <TextView
+                android:id="@+id/feedbacktitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="Feedback"
+                android:textAlignment="center"
+                android:textColor="@color/lavendar"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <RatingBar
+                android:id="@+id/fbstars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:numStars="5"
+                android:progressTint="@color/lavendar"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="@color/lavendar"
+                android:textSize="30dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/feedbackinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="20dp"
+                android:gravity="start|top"
+                android:hint="Enter your feedback"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:padding="10dp"
+                android:textColor="@color/text"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize"/>
+
+            <Button
+                android:id="@+id/sendfeedback_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_first"
+                android:text="Send Feedback"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,VisualLintButtonSize" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

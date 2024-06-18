@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/foodicon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bowl_food_solid"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+        <TextView
+            android:id="@+id/dish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/foodicon"
+            android:text="Dish:-"
+            android:textColor="@color/lavendar"
+            android:textSize="16sp"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/dishname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/dish"
+            android:text="Biryani"
+            android:textColor="@color/lavendar"
+            android:textSize="16sp"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/serves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serves:-"
+            android:textColor="@color/lavendar"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/foodicon"
+            android:layout_below="@id/dish"
+            android:layout_marginStart="20dp"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/foodserves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/lavendar"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/serves"
+            android:layout_below="@id/dish"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/foodcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Person"
+            android:textColor="@color/lavendar"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/foodserves"
+            android:layout_below="@id/dish"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location:-"
+            android:textColor="@color/lavendar"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/foodicon"
+            android:layout_below="@id/serves"
+            android:layout_marginStart="20dp"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/foodlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maruti Mandir"
+            android:textColor="@color/lavendar"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/location"
+            android:layout_below="@id/serves"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

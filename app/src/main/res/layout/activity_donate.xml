@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/custom_edittext">
+
+            <EditText
+                android:id="@+id/donorname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/text"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/fooditem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_fastfood_24"
+                android:drawablePadding="10dp"
+                android:hint="FoodItem"
+                android:lines="3"
+                android:inputType="textMultiLine"
+                android:padding="8dp"
+                android:textColor="@color/text"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/foodquantity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_format_list_numbered_24"
+                android:drawablePadding="10dp"
+                android:hint="Feeds how many people?"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="@color/text"
+                tools:ignore="TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/donoraddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_location_on_24"
+                android:drawablePadding="10dp"
+                android:hint="Address"
+                android:lines="3"
+                android:inputType="textMultiLine"
+                android:padding="8dp"
+                android:textColor="@color/text"
+                tools:ignore="TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/donate_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_first"
+                android:text="Donate"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,VisualLintButtonSize" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">FoodScape</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="password">Password</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="already_an_user_login">Already an user? Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="not_registered_sign_up">Not registered? Sign Up</string>
+    <string name="food_waste_has_become_a_major_problem_worldwide_and_you_must_do_your_part_by_joining_with_us">Food waste has become a major problem worldwide and you must do your part by joining with us.</string>
+    <string name="foodscape">FoodScape</string>
+    <string name="take_a_step_to_stop_wasting_food">Take a step to stop wasting food</string>
+    <string name="throwing_away_food_is_like_stealing_from_the_table_of_the_poor_and_hungry">Throwing away food is like stealing from the table of the poor and hungry.</string>
+    <string name="ngo_name">NGO Name</string>
+    <string name="waste_for_you_is_best_for_someone_so_stop_wasting_food">Waste for you is best for someone. So stop wasting food.</string>
+    <string name="ngo">ngo</string>
+    <string name="donor">donor</string>
+    <string name="foodscape_2">FoodScape</string>
+    <string name="donating_the_remaining_food_to_needy_is_equal_to_saving_lives_of_many">Donating the remaining food to needy is equal to saving lives of many.</string>
+    <string name="phone">Phone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="ngo_name2">NGO Name</string>
+    <string name="email2">Email</string>
+    <string name="phone_no">Phone no</string>
+    <string name="address">Address</string>
+    <string name="save">Save</string>
+    <string name="_5">5</string>
+    <string name="new1">New</string>
+    <string name="request_status">Request Status</string>
+    <string name="_2">2</string>
+    <string name="pending">Pending</string>
+    <string name="_10">10</string>
+    <string name="completed">Completed</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_no1">Phone No</string>
+    <string name="email_address">Email Address</string>
+    <string name="ask_your_query">Ask your query</string>
+    <string name="address1">Address</string>
+</resources>

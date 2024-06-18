@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "669791494772",
+    "project_id": "foodscape-authentication",
+    "storage_bucket": "foodscape-authentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669791494772:android:548624e06f9e36cdc5a721",
+        "android_client_info": {
+          "package_name": "com.example.foodscape"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669791494772-2c354mro060mh9rp55pkdjb44ntrb4jt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuAwX43pFCFhEvNHrHUmhpPqy8v5KiYXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669791494772-2c354mro060mh9rp55pkdjb44ntrb4jt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

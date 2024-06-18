@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NgoPendingFragment"
+    android:background="@drawable/profilebkg">
+
+    <TextView
+        android:id="@+id/requeststatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/request_status"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginVertical="120dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/neworders"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="15dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/new_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new1"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pendingorders"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="15dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pending_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pending"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/completedorders"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="15dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/completed_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/completed"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:id="@+id/pendingdatarecyclerview"
+        android:scrollbars="vertical"
+        android:layout_marginTop="255dp"
+        tools:listitem="@layout/ngo_pending_item"/>
+    <Button
+        android:id="@+id/completebtn"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/btn_first"
+        android:text="Complete"
+        android:textSize="22dp"
+        android:textColor="@color/white"/>
+
+</FrameLayout>
